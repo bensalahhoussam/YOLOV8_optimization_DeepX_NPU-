@@ -6,8 +6,12 @@ Designed and implemented optimization pipelines for YOLOv8 to enable high-perfor
 
 The model was trained using the person class from the COCO Dataset, then pruned and optimized for real-time inference. The final optimized model was deployed and validated on the DeepX M1 NPU chip, ensuring efficient edge-level performance.
 
+You can download the trained models below:
 
+Full_Size_Model : 
 
+- **Pruned Model**  
+  👉 [Download here](https://drive.google.com/file/d/1B6cFLSjGSeUOtiKna4kfbaPl9yrbGeuV/view?usp=drive_link)
 ## Requirements
 Make sure the following dependencies are installed before running the project:
 
@@ -25,7 +29,6 @@ L2-norm pruning removes filters based solely on weight magnitude.
 
 Assumption: smaller weights → less important filters
 Smaller weights → Less important filters
-
 
 
 ### 🎯 Impact on Small Object Detection
@@ -67,8 +70,6 @@ Instead of relying on weight magnitude, we:
 
 
 ## Results 
-
-Using Taylor Rank method 
 
 Init State : GFLOPs = 82.73 * 2 = 165,4 / Params: 43,691,52 M / mAP = 0,59  
 
