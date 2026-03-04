@@ -1,23 +1,28 @@
 # YOLOV8_optimization_DeepX_NPU-
-Designed and implemented optimization pipelines for YOLOv8 to enable high-performance deployment on DeepX Neural Processing Units (NPUs). Applied techniques such as pruning, quantization, and computational graph optimization to reduce latency, memory footprint, and MACs while maintaining detection accuracy.
+Designed and implemented optimization pipelines for YOLOv8 to enable high-performance deployment on DeepX Neural Processing Units (NPUs). Applied techniques such as Structured Pruning, quantization,  to reduce latency, memory footprint, and MACs while maintaining detection accuracy.
+
+
+# Model 
+
+The model was trained using the person class from the COCO Dataset, then pruned and optimized for real-time inference. The final optimized model was deployed and validated on the DeepX M1 NPU chip, ensuring efficient edge-level performance.
+
 
 
 ## Requirements
-ake sure the following dependencies are installed before running the project:
+Make sure the following dependencies are installed before running the project:
 
 - Python 3.8+
-- Qt6
 - OpenCV
 - Ultralytics (YOLOv8)
 - NumPy
 
 ## Results 
 
-Using L2 method to rank the filters ==> 71% reduction
+Using Taylor Rank method to rank the filters ==> 40% reduction
 
-Init State : FLOPs = 82 ,73 * 2 = 165,4 / Params: 43,691,52 M / mAP = 0,65  
-Final state : FLOPs = 24,32 * 2 = 48.64 /  Params : 12,496,550 M / mAP = 0.67 (mAP drop from baseline : -0.0239 )
+Init State : GFLOPs = 82.73 * 2 = 165,4 / Params: 43,691,52 M / mAP = 0,59  
+Final state : GFLOPs = 49.05 * 2 = 98.1 /  Params : 18,872,581 M / mAP = 0.56 (mAP drop from baseline : 0.0311 )
+SpeeduP : x1.68
 
 
-<img width="761" height="572" alt="image" src="https://github.com/user-attachments/assets/39565350-bc5a-4082-9bac-6857ffb3b6fa" />
-
+<img width="800" height="600" alt="pruning_perf_change" src="https://github.com/user-attachments/assets/9e9871fd-cf4c-4b31-bd0e-cf42d7246d16" />
