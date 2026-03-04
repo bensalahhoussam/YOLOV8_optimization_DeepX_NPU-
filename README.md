@@ -8,10 +8,12 @@ The model was trained using the person class from the COCO Dataset, then pruned 
 
 You can download the trained models below:
 
-Full_Size_Model : 
+- **Full Size Model**  
+  👉 [Download here]([PASTE_FULL_MODEL_LINK_HERE](https://drive.google.com/file/d/147LdITmBO8U7Ph6797X0qFvYhAiovxSk/view?usp=sharing))
 
 - **Pruned Model**  
   👉 [Download here](https://drive.google.com/file/d/1B6cFLSjGSeUOtiKna4kfbaPl9yrbGeuV/view?usp=drive_link)
+  
 ## Requirements
 Make sure the following dependencies are installed before running the project:
 
