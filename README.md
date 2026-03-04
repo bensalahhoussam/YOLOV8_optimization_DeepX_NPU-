@@ -1,4 +1,4 @@
-# YOLOV8_optimization_DeepX_NPU-
+# YOLOV8_optimization_DeepX_NPU_M1
 Designed and implemented optimization pipelines for YOLOv8 to enable high-performance deployment on DeepX Neural Processing Units (NPUs). Applied techniques such as Structured Pruning, quantization,  to reduce latency, memory footprint, and MACs while maintaining detection accuracy.
 
 
