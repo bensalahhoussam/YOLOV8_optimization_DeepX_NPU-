@@ -22,6 +22,7 @@ Using Taylor Rank method
 
 Init State : GFLOPs = 82.73 * 2 = 165,4 / Params: 43,691,52 M / mAP = 0,59  
 Final state : GFLOPs = 49.05 * 2 = 98.1 /  Params : 18,872,581 M / mAP = 0.56 (mAP drop from baseline : 0.0311 )
+
 Reduction : 40%
 SpeeduP : x1.68
 
