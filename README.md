@@ -78,6 +78,4 @@ Reduction : 40%
 
 SpeeduP : x1.68
 
-Note : Using L2 method 
-
 <img width="800" height="600" alt="pruning_perf_change" src="https://github.com/user-attachments/assets/9e9871fd-cf4c-4b31-bd0e-cf42d7246d16" />
