@@ -17,41 +17,53 @@ Make sure the following dependencies are installed before running the project:
 - NumPy
 
 
-## Approch Used 
+## 📌 Approach Used 
 
 ### Problem: L2-Norm Pruning Limitation
 
-L2-norm pruning removes filters based on weight magnitude
+L2-norm pruning removes filters based solely on weight magnitude.
 
 Assumption: smaller weights → less important filters
+Smaller weights → Less important filters
 
-### Impact on Small Object Detection
 
-Small objects rely on fine-grained, low-magnitude features
 
-Important filters for small objects may have low L2 norms
+### 🎯 Impact on Small Object Detection
 
-Iterative pruning progressively removes these filters
+* Small objects depend on fine-grained and subtle feature representations
 
-➜ Gradual degradation in small object detection performance
+* Filters capturing these details may have low L2 norms
+
+* Magnitude-based pruning may incorrectly remove these filters
+
+* Iterative pruning progressively eliminates informative features
+
+➜ Result: Gradual degradation in small object detection performance
 
 
 ### ✅ Proposed Solution: Taylor-Based Pruning (Taylor Rank)
 
-Rank filters based on their contribution to the loss function
+Instead of relying on weight magnitude, we:
 
-Measures loss sensitivity, not just weight size
+* Rank filters based on their contribution to the loss function
 
-If removing a feature map significantly increases loss → it is important
+* Estimate importance using loss sensitivity (first-order Taylor approximation)
 
-Better preservation of:
+* Preserve filters whose removal significantly increases the loss
 
-* Small object features
+### 🚀 Benefits of Taylor-Based Pruning
 
-L* ocalization-sensitive filters
+* Better preservation of:
 
-* Detection robustness
+  * Small object feature representations
 
+  * Localization-sensitive filters
+
+  * Detection robustness
+
+* Maintains accuracy while enabling structured model compression
+
+* More reliable for real-time deployment scenarios
 
 
 ## Results 
