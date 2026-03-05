@@ -87,5 +87,5 @@ SpeeduP : x1.68
 
 | Original Model  | Pruned Model |
 |---------|---------|
-| [![Original Model]](https://drive.google.com/file/d/1l6u_bKs3daYXhZya3og6PQvNQIWh5uGp/view?usp=sharing) | [![Pruned Model]](https://link_to_video2.com](https://drive.google.com/file/d/19vkdKJMmUeEKtm-zcjyfDKYswuYDXV_7/view?usp=sharing)) |
+| [![Original Model]](https://drive.google.com/file/d/1l6u_bKs3daYXhZya3og6PQvNQIWh5uGp/view?usp=sharing) | [![Original Model]](https://drive.google.com/file/d/19vkdKJMmUeEKtm-zcjyfDKYswuYDXV_7/view?usp=sharing) |
 
