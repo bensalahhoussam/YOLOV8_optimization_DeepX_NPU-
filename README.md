@@ -82,3 +82,10 @@ Reduction : 40%
 SpeeduP : x1.68
 
 <img width="800" height="600" alt="pruning_perf_change" src="https://github.com/user-attachments/assets/9e9871fd-cf4c-4b31-bd0e-cf42d7246d16" />
+
+
+
+| Original Model  | Pruned Model |
+|---------|---------|
+| [![Video 1](thumbnail1.png)]() | [![Video 2](thumbnail2.png)](https://link_to_video2.com) |
+
